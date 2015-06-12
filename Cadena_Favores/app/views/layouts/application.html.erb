@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>PROYECTO</title>
+	  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+	  
+	  <%= stylesheet_link_tag    'application', media: 'all' %>
+	  <%= javascript_include_tag 'application' %>
+	  <%= csrf_meta_tags %>
+	  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	</head>
+	<body>
+		<header>
+			FAVOROOTS 
+			<span class="btn-group-pull-right">
+	            <%= link_to'Info' %>
+	            <%= link_to 'Chains', chains_path %>
+	            <%= link_to 'Map', map_path %>
+	 	</span>
+		</header>
+		<img class= "background_image" src="/fondo.jpg">
+
+	
+		<%= yield %>
+
+
+		<footer> 
+			<hr> Created by Irene Muñoz Real ® Ironhack 2015
+
+		</footer>
+	</body>
+</html>

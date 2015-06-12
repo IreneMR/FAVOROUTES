@@ -1,0 +1,38 @@
+<% @chains.each do |chain| %><br>
+
+	<div class="chain-container container col-md-10 col-md-offset-1" id="chain<%=chain.id%>" name="<%=chain.id%>"><%= chain.name %></div>
+
+	<% chain.userposts.each do |userpost| %>
+		<div class="container">
+		    <ul class="timeline">
+		        <li>
+		          <div class="timeline-badge up"><i class="fa fa-thumbs-up"></i></div>
+			          <div class="timeline-panel">
+			            <div class="timeline-heading">
+			              <h4 class="timeline-title">User: <%= userpost.user %></h4>
+			            </div>
+			            <div class="timeline-body">
+			              <p>Comment: <%= userpost.comment %></p>
+			              <p>City: <%= userpost.address %></p>
+			            </div>
+			          </div>
+			      </div>
+		        </li>
+		    </ul>
+		</div>
+	<% end %>		
+
+	<div class="form-container">
+		<%= text_field_tag :user, nil, id: nil, name: chain.id, class: "user-field", :placeholder => "Name", size: 40 %><br>
+		<%= text_area_tag :comment, nil, id: nil, name: chain.id, class: "comment-field", :placeholder => "Put here your experience", size: '30x3' %><br>
+		<%= text_field_tag :address, nil, id: nil, name: chain.id, class: "city-field", :placeholder => "City", size: 40 %><br>
+		
+		<button class="btn-send" name="<%=chain.id %>" >Send!</button>
+	</div>
+
+<%end%>
+
+<div class="new-chain">
+<button class="btn-chain">Create a new chain</button>
+</div>
+
