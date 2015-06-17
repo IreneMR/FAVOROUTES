@@ -7,13 +7,6 @@ class ChainsController < ApplicationController
 
 	def show
 		@chain = Chain.find params[:id]	
-		latitude = @chain.userposts.first.latitude.to_f
-		longitude = @chain.userposts.first.longitude.to_f
-		respond_to do |format|
-			format.html
-			format.json {render json: [latitude, longitude]}
-
-		end
 
 	end
 

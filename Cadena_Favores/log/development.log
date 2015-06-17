@@ -22894,3 +22894,569 @@ Started GET "/assets/userposts.self-19a187bec6cdb96d6de80a61c16c857c613536adf913
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-11 17:07:46 +0200
+
+
+Started GET "/userposts/map" for ::1 at 2015-06-16 17:27:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/userposts/map"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (68.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (55.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (331.0ms)
+
+
+Started GET "/userposts/map" for ::1 at 2015-06-16 17:27:07 +0200
+
+ActionController::RoutingError (No route matches [GET] "/userposts/map"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (194.0ms)
+
+
+Started GET "/userposts/map" for ::1 at 2015-06-16 17:28:21 +0200
+
+ActionController::RoutingError (No route matches [GET] "/userposts/map"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (163.0ms)
+
+
+Started GET "/userposts/map" for ::1 at 2015-06-16 17:28:22 +0200
+
+ActionController::RoutingError (No route matches [GET] "/userposts/map"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/Ruby21/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (159.0ms)
+
+
+Started GET "/" for ::1 at 2015-06-16 17:28:26 +0200
+Processing by ChainsController#landing as HTML
+  Rendered chains/landing.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2472ms (Views: 2471.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:28:31 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 391ms (Views: 391.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:35:58 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 923ms (Views: 922.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/maps.self-c6eea05290ef6e7812665a976821ea110e91088d905548b496166793dc516a18.js?body=1" for ::1 at 2015-06-16 17:35:59 +0200
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:37:17 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 391ms (Views: 390.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:39:11 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 517ms (Views: 515.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:40:57 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 418ms (Views: 418.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:43:18 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 408ms (Views: 408.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chains.self-d3207f6c46aef8e906cd6cc59dc463784990e397d255f602dc0e41f43b9621af.css?body=1" for ::1 at 2015-06-16 17:43:18 +0200
+
+
+Started GET "/assets/userposts.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-06-16 17:43:19 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-16 17:43:19 +0200
+
+
+Started GET "/assets/maps.self-c6eea05290ef6e7812665a976821ea110e91088d905548b496166793dc516a18.js?body=1" for ::1 at 2015-06-16 17:43:19 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-16 17:43:19 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-16 17:43:19 +0200
+
+
+Started GET "/assets/posts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:43:19 +0200
+
+
+Started GET "/assets/chains.self-e16ff23a68849e53e31676c74c3eef61c964f7a82c3a88625a9a7f38ba91e3b9.js?body=1" for ::1 at 2015-06-16 17:43:19 +0200
+
+
+Started GET "/assets/userposts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:43:19 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-16 17:43:19 +0200
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:43:56 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 849ms (Views: 848.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chains.self-d3207f6c46aef8e906cd6cc59dc463784990e397d255f602dc0e41f43b9621af.css?body=1" for ::1 at 2015-06-16 17:43:57 +0200
+
+
+Started GET "/assets/userposts.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-06-16 17:43:57 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-16 17:43:57 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-16 17:43:57 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-16 17:43:57 +0200
+
+
+Started GET "/assets/maps.self-b19cafee7ebcef169bde39a569f9e0576357dd31efdf8d6863706b01a0e406ca.js?body=1" for ::1 at 2015-06-16 17:43:57 +0200
+
+
+Started GET "/assets/chains.self-e16ff23a68849e53e31676c74c3eef61c964f7a82c3a88625a9a7f38ba91e3b9.js?body=1" for ::1 at 2015-06-16 17:43:58 +0200
+
+
+Started GET "/assets/posts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:43:58 +0200
+
+
+Started GET "/assets/userposts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:43:58 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-16 17:43:58 +0200
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:44:42 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 819ms (Views: 818.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chains.self-d3207f6c46aef8e906cd6cc59dc463784990e397d255f602dc0e41f43b9621af.css?body=1" for ::1 at 2015-06-16 17:44:44 +0200
+
+
+Started GET "/assets/userposts.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-06-16 17:44:44 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-16 17:44:44 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-16 17:44:44 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-16 17:44:44 +0200
+
+
+Started GET "/assets/maps.self-2ac82b952afeadf4dfb6cf77275acc341b95837c9dd327193fcf77bb76acfff9.js?body=1" for ::1 at 2015-06-16 17:44:44 +0200
+
+
+Started GET "/assets/chains.self-e16ff23a68849e53e31676c74c3eef61c964f7a82c3a88625a9a7f38ba91e3b9.js?body=1" for ::1 at 2015-06-16 17:44:44 +0200
+
+
+Started GET "/assets/posts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:44:44 +0200
+
+
+Started GET "/assets/userposts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:44:44 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-16 17:44:44 +0200
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:45:09 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 898ms (Views: 898.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chains.self-d3207f6c46aef8e906cd6cc59dc463784990e397d255f602dc0e41f43b9621af.css?body=1" for ::1 at 2015-06-16 17:45:10 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-16 17:45:10 +0200
+
+
+Started GET "/assets/userposts.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-06-16 17:45:10 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-16 17:45:10 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-16 17:45:10 +0200
+
+
+Started GET "/assets/chains.self-e16ff23a68849e53e31676c74c3eef61c964f7a82c3a88625a9a7f38ba91e3b9.js?body=1" for ::1 at 2015-06-16 17:45:10 +0200
+
+
+Started GET "/assets/maps.self-e23f3b2a9b6078709ceb3042fc1785525d1df232f741a7f238cc2243e7af2136.js?body=1" for ::1 at 2015-06-16 17:45:10 +0200
+
+
+Started GET "/assets/posts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:45:10 +0200
+
+
+Started GET "/assets/userposts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:45:10 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-16 17:45:10 +0200
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:45:34 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 885ms (Views: 885.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-16 17:45:35 +0200
+
+
+Started GET "/assets/chains.self-d3207f6c46aef8e906cd6cc59dc463784990e397d255f602dc0e41f43b9621af.css?body=1" for ::1 at 2015-06-16 17:45:35 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-16 17:45:35 +0200
+
+
+Started GET "/assets/chains.self-e16ff23a68849e53e31676c74c3eef61c964f7a82c3a88625a9a7f38ba91e3b9.js?body=1" for ::1 at 2015-06-16 17:45:35 +0200
+
+
+Started GET "/assets/userposts.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-06-16 17:45:35 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-16 17:45:35 +0200
+
+
+Started GET "/assets/maps.self-b56552b35febdd8d669ff1c62efd2d98aca94af6f44f350534121e6e36ef6014.js?body=1" for ::1 at 2015-06-16 17:45:35 +0200
+
+
+Started GET "/assets/userposts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:45:35 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-16 17:45:36 +0200
+
+
+Started GET "/assets/posts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:45:36 +0200
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:46:19 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 777ms (Views: 777.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chains.self-d3207f6c46aef8e906cd6cc59dc463784990e397d255f602dc0e41f43b9621af.css?body=1" for ::1 at 2015-06-16 17:46:20 +0200
+
+
+Started GET "/assets/userposts.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-06-16 17:46:20 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-16 17:46:20 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-16 17:46:20 +0200
+
+
+Started GET "/assets/maps.self-9b4b6d37cdd0a84da4f8284493c60d6c73d47d786b9f6ceb47a9cf3cdb2407a6.js?body=1" for ::1 at 2015-06-16 17:46:20 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-16 17:46:20 +0200
+
+
+Started GET "/assets/posts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:46:20 +0200
+
+
+Started GET "/assets/chains.self-e16ff23a68849e53e31676c74c3eef61c964f7a82c3a88625a9a7f38ba91e3b9.js?body=1" for ::1 at 2015-06-16 17:46:20 +0200
+
+
+Started GET "/assets/userposts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:46:21 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-16 17:46:21 +0200
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:50:54 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 458ms (Views: 458.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chains.self-d3207f6c46aef8e906cd6cc59dc463784990e397d255f602dc0e41f43b9621af.css?body=1" for ::1 at 2015-06-16 17:50:55 +0200
+
+
+Started GET "/assets/userposts.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-06-16 17:50:55 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-16 17:50:55 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-16 17:50:55 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-16 17:50:55 +0200
+
+
+Started GET "/assets/chains.self-e16ff23a68849e53e31676c74c3eef61c964f7a82c3a88625a9a7f38ba91e3b9.js?body=1" for ::1 at 2015-06-16 17:50:55 +0200
+
+
+Started GET "/assets/userposts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:50:55 +0200
+
+
+Started GET "/assets/posts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:50:55 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-16 17:50:55 +0200
+
+
+Started GET "/assets/maps.self-9b4b6d37cdd0a84da4f8284493c60d6c73d47d786b9f6ceb47a9cf3cdb2407a6.js?body=1" for ::1 at 2015-06-16 17:50:55 +0200
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:51:57 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 460ms (Views: 460.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chains.self-d3207f6c46aef8e906cd6cc59dc463784990e397d255f602dc0e41f43b9621af.css?body=1" for ::1 at 2015-06-16 17:51:57 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-16 17:51:57 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-16 17:51:57 +0200
+
+
+Started GET "/assets/userposts.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-06-16 17:51:58 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-16 17:51:58 +0200
+
+
+Started GET "/assets/chains.self-e16ff23a68849e53e31676c74c3eef61c964f7a82c3a88625a9a7f38ba91e3b9.js?body=1" for ::1 at 2015-06-16 17:51:58 +0200
+
+
+Started GET "/assets/maps.self-9b4b6d37cdd0a84da4f8284493c60d6c73d47d786b9f6ceb47a9cf3cdb2407a6.js?body=1" for ::1 at 2015-06-16 17:51:58 +0200
+
+
+Started GET "/assets/posts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:51:58 +0200
+
+
+Started GET "/assets/userposts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:51:58 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-16 17:51:58 +0200
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:52:08 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 436ms (Views: 436.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-16 17:52:08 +0200
+
+
+Started GET "/assets/chains.self-d3207f6c46aef8e906cd6cc59dc463784990e397d255f602dc0e41f43b9621af.css?body=1" for ::1 at 2015-06-16 17:52:08 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-16 17:52:08 +0200
+
+
+Started GET "/assets/chains.self-e16ff23a68849e53e31676c74c3eef61c964f7a82c3a88625a9a7f38ba91e3b9.js?body=1" for ::1 at 2015-06-16 17:52:08 +0200
+
+
+Started GET "/assets/userposts.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-06-16 17:52:09 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-16 17:52:09 +0200
+
+
+Started GET "/assets/maps.self-9b4b6d37cdd0a84da4f8284493c60d6c73d47d786b9f6ceb47a9cf3cdb2407a6.js?body=1" for ::1 at 2015-06-16 17:52:09 +0200
+
+
+Started GET "/assets/userposts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:52:09 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-16 17:52:09 +0200
+
+
+Started GET "/assets/posts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:52:09 +0200
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 17:52:31 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 458ms (Views: 457.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chains.self-d3207f6c46aef8e906cd6cc59dc463784990e397d255f602dc0e41f43b9621af.css?body=1" for ::1 at 2015-06-16 17:52:32 +0200
+
+
+Started GET "/assets/userposts.self-b60acab5af8d245ed2b3012f77d11d8d207d8eada27756badaf4ef05770d60f6.css?body=1" for ::1 at 2015-06-16 17:52:32 +0200
+
+
+Started GET "/assets/chains.self-e16ff23a68849e53e31676c74c3eef61c964f7a82c3a88625a9a7f38ba91e3b9.js?body=1" for ::1 at 2015-06-16 17:52:32 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-16 17:52:32 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-06-16 17:52:32 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-16 17:52:32 +0200
+
+
+Started GET "/assets/maps.self-9b4b6d37cdd0a84da4f8284493c60d6c73d47d786b9f6ceb47a9cf3cdb2407a6.js?body=1" for ::1 at 2015-06-16 17:52:32 +0200
+
+
+Started GET "/assets/userposts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:52:32 +0200
+
+
+Started GET "/assets/posts.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-06-16 17:52:32 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-16 17:52:32 +0200
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 18:00:15 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 500ms (Views: 499.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 18:22:11 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 2265ms (Views: 2264.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chains/map" for ::1 at 2015-06-16 18:22:21 +0200
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 350ms (Views: 349.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chains/map" for ::1 at 2015-06-17 09:30:55 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChainsController#map as HTML
+  Rendered chains/map.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 1384ms (Views: 1384.1ms | ActiveRecord: 0.0ms)

@@ -3,10 +3,10 @@
 	<head>
 	  <title>PROYECTO</title>
 	  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		
 	  
 	  <%= stylesheet_link_tag    'application', media: 'all' %>
-	  <%= javascript_include_tag 'application' %>
+	 
 	  <%= csrf_meta_tags %>
 	  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -26,7 +26,8 @@
 	
 		<%= yield %>
 
-
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+ <%= javascript_include_tag 'application' %>
 		<footer> 
 			<hr> Created by Irene Muñoz Real ® Ironhack 2015
 

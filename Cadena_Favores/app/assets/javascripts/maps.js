@@ -1,32 +1,21 @@
-$(document).ready(function(){
-	/*$.ajax({
-		type: 'GET', 
-		url: '/chains/1',
-		dataType: 'json',
-		success: function (response){
-			initialize(response);
-			console.log(response);
-		},
 
-		error: function (){
-			alert('Error');
-		}	
 
-	});
-*/
-	var map;
-	function initialize(response) {
+function initialize() {
+	console.log('3');
+    var mapCanvas = document.getElementById('map-canvas');
+    console.log('1');
+    var mapOptions = {
+      center: new google.maps.LatLng(44.5403, 78.5463),
+      zoom: 8,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    console.log('2');
+  };
 
-		 var mapOptions = {
-		   zoom: 8,
-		   center: new google.maps.LatLng(response[0],response[1])
 
-		 };
-		 map = new google.maps.Map(document.getElementById('map-canvas'),
-		     mapOptions);
- 
-	}
+  initialize();
 
-});
+
 
 
