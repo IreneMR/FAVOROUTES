@@ -1,14 +1,18 @@
 $(document).ready(function(){
 	$(".btn-send").on("click",function(){
-
+		 var token = $( 'meta[name="csrf-token"]' ).attr( 'content' );
+		 
+		  $.ajaxSetup( {
+		    beforeSend: function ( xhr ) {
+		      xhr.setRequestHeader( 'X-CSRF-Token', token );
+		    }
+		  });
 		var newPost = {
 			comment: $(this).siblings(".comment-field").val(),
 			user:  $(this).siblings(".user-field").val(), 
 			city:   $(this).siblings(".city-field").val()
 		}
 		currentChainID = $(this).attr("name")
-		//currentChain = $("#chain"+currentChainID);
-		//currentChain.after("<div>"+newPost.user+" "+newPost.comment +" "+newPost.city+"</div>" );
 
 		$.ajax({
 			type: "POST",

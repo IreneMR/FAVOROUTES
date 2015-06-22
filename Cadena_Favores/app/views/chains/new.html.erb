@@ -1,0 +1,14 @@
+<%= form_for @chain do |f| %>
+ <%= f.label :name %>
+ <%= f.text_field :name %>
+ <br>
+ <%= f.label :date_chain %>
+ <%= f.date_field :date_chain %>
+ <br>
+ <%= f.label :description_chain %>
+ <%= f.text_field :description_chain %>
+ 
+
+ <%= f.submit 'Save' %>
+
+<% end %>
