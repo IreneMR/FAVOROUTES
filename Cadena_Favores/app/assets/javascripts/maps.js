@@ -55,5 +55,6 @@
             map: map,
             title: markers[i][0]
          });
+      }
 
 });
