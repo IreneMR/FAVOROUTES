@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/chains/info' => "chains#info", as: 'info'
   get '/chains/chart' => "chains#chart", as: 'chart'
   get '/chains/new' => "chains#new", as: 'new'
+  get '/chains' => "chains#index" 
 
 
   resources :chains do

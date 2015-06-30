@@ -20,11 +20,13 @@ class ChainsController < ApplicationController
 	def create
 		@chain = Chain.new chain_params
 		if @chain.save
-			redirect_to @chain
+			redirect_to '/chains'
 		else
 			render 'index'
 		end
 	end
+
+
 
 	private
 

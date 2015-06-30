@@ -17,6 +17,7 @@
         url: 'http://maps.googleapis.com/maps/api/geocode/json?address='+search+'&sensor=false',
         success: function(response){initialize(response)},
         error: function(){alert('KO')}
+
     });
   });
 

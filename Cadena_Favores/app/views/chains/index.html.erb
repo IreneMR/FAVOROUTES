@@ -1,58 +1,84 @@
-
-
-<section class="wrapper">
-  <h1>Tabs with HTML5, CSS3 and jQuery</h1>
-  <ul class="tabs">
-    <li><a href="#tab1">Pestaña 1</a></li>
-    <li><a href="#tab2">Pestaña 2</a></li>
-    <li><a href="#tab3">Pestaña 3</a></li>
+<div class="big-tab">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+  	<% @chains.each do |chain| %>
+   	<li role="presentation" class=""><a href="#<%= chain.id %>" aria-controls="<%= chain.id %>" role="tab" data-toggle="tab"><%= chain.name %></a></li>    
+  <% end %>
   </ul>
-  <div class="clr"></div>
-  <section class="block">
-    <article id="tab1">
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
-    </article>
-    <article id="tab2">
-      <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
-    </article>
-    <article id="tab3">
-      <p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
-    </article>
-  </section>
-</section>
 
-<% @chains.each do |chain| %><br>
-
-	<div class="chain-container container col-md-10 col-md-offset-1" id="chain<%=chain.id%>" name="<%=chain.id%>"><%= chain.name %></div>
-
-	<% chain.userposts.each do |userpost| %>
-		<div class="container">
-		    <ul class="timeline">
-		        <li>
-		          <div class="timeline-badge up"><i class="fa fa-thumbs-up"></i></div>
-			          <div class="timeline-panel">
-			            <div class="timeline-heading">
-			              <h4 class="timeline-title">User: <%= userpost.user %></h4>
-			            </div>
-			            <div class="timeline-body">
-			              <p>Comment: <%= userpost.comment %></p>
-			              <p>City: <%= userpost.address %></p>
-			            </div>
-			          </div>
-			      </div>
-		        </li>
-		    </ul>
-		</div>
-	<% end %>		
-
-	<div class="form-container">
-		<%= text_field_tag :user, nil, id: nil, name: chain.id, class: "user-field", :placeholder => "Name", size: 40 %><br>
-		<%= text_area_tag :comment, nil, id: nil, name: chain.id, class: "comment-field", :placeholder => "Put here your experience", size: '30x3' %><br>
-		<%= text_field_tag :address, nil, id: nil, name: chain.id, class: "city-field", :placeholder => "City", size: 40 %><br>
-		
-		<button class="btn-send" name="<%=chain.id %>" >Send!</button>
+  <!-- Tab panes -->
+  <div class="tab-content">
+	  	<% @chains.each do |chain| %><br>
+	      <div role="tabpanel" class="tab-pane" id="<%= chain.id %>">
+	 			<% chain.userposts.each do |userpost| %>
+					<div class="container">
+				      <ul class="timeline">
+				        <li>
+				          <div class="timeline-badge up"><i class="fa fa-thumbs-up"></i></div>
+					          <div class="timeline-panel timeline-width">
+					            <div class="timeline-heading">
+					              <h4 class="timeline-title">User: <%= userpost.user %></h4>
+					            </div>
+					            <div class="timeline-body">
+					              <p>Comment: <%= userpost.comment %></p>
+					              <p>City: <%= userpost.address %></p>
+					            </div>
+					          </div>
+				        </li>
+				      </ul>
+					</div>
+				<% end %>	
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				CREATE A NEW POST
+				</button>
+				<div class="modal fade" id="myModal">
+	  				<div class="modal-dialog">
+	    				<div class="modal-content">
+	      				<div class="modal-header">
+	        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        					<h4 class="modal-title">Modal title</h4>
+	      				</div>
+	      				<div class="modal-body">
+	        					<%= text_field_tag :user, nil, id: nil, name: chain.id, class: "user-field", :placeholder => "Name", size: 40 %><br>
+								<%= text_area_tag :comment, nil, id: nil, name: chain.id, class: "comment-field", :placeholder => "Put here your experience", size: '30x3' %><br>
+								<%= text_field_tag :address, nil, id: nil, name: chain.id, class: "city-field", :placeholder => "City", size: 40 %><br>
+	      				</div>
+	     					<div class="modal-footer">
+	        					<button type="button" class="btn-send" name="<%=chain.id %>" >Send!</button>
+	      				</div>
+	      			</div><!-- /.modal-content -->
+	    			</div><!-- /.modal-dialog -->
+	  			</div><!-- /.modal -->	
+			</div>
+		<%end%>
 	</div>
 
-<%end%>
+ </div>
 
-<%= link_to 'CREATE A NEW CHAIN', new_chain_path %>
+
+<!--BOTÓN CADENA -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+CREATE A NEW CHAIN
+</button>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">NEW CHAIN</h4>
+      </div>
+      <div class="modal-body">
+       
+		
+ 			
+      </div>
+      <div class="modal-footer">
+	      <button type="button" class="btn-send">Save!</button>
+	   </div>
+	   
+
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

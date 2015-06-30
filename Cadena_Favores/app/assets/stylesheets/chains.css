@@ -80,6 +80,8 @@ a {
   position: relative;
   margin: 0;
 }
+
+
 .timeline:before {
   top: 0;
   bottom: 0;
@@ -110,9 +112,14 @@ a {
 .timeline > li:after {
   clear: both;
 }
+
+.timeline-width{
+  width: 50%;
+}
 .timeline > li > .timeline-panel {
-  width: calc( 100% - 55px );
-  float: right;
+  width: 50%;
+  margin-left: 4em;
+  float: left;
   border: 1px solid #d4d4d4;
   border-radius: 22px;
   padding: 10px;
@@ -123,7 +130,7 @@ a {
 .timeline > li > .timeline-panel:before {
   position: absolute;
   top: 26px;
-  left: -15px;
+  left: -100px;
   display: inline-block;
 }
 .timeline > li > .timeline-panel:after {
@@ -189,51 +196,19 @@ a {
   margin-top: 5px;
 }
 
+
+
 .chain-container{
   margin-top: 120px;
   margin-left: 20px;
 	width: 60%;
 }
-/*CHAINS */
-.wrapper{
-  background: white;
-  margin: auto;
-  padding: 1em;
-  width: 50%;
+/*CHAIN TIMELINE */
+
+.big-tab{
+  margin-left: 12em 
 }
-h1 {
-  text-align: center;
-}
-ul.tabs {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-ul.tabs li {
-  border: gray solid 1px;
-  border-bottom: none;
-  float: left;
-  margin: 0 .25em 0 0;
-  padding: .25em .5em;
-}
-ul.tabs li a {
-  color: gray;
-  font-weight: bold;
-  text-decoration: none;
-}
-ul.tabs li.active {
-  background: gray;
-}
-ul.tabs li.active a {
-  color: white;
-}
-.clr {
-  clear: both;
-}
-article {
-  border-top: gray solid 1px;
-  padding: 0 1em;
-}
+
 
 /*CARROUSEL*/
 
@@ -280,72 +255,5 @@ article {
 
 }
 
-/*    Video    */
-.video{
-    display: block;
-    width: 100%;
-    height: 350px;
-    text-align: center;
-    margin-top: 100px;
-    background: url('../img/video.jpg') no-repeat;    
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
 
-.video .video_logo{
-    margin-top: 85px;
-}
-
-.video h3{
-    color: #fff;
-    font-family: "raleway-regular";
-    font-size: 14px;
-    font-weight: normal!important;
-    margin: 20px 0 0 0;
-}
-
-.video #play_btn{
-    display: inline-block;
-    width: 71px;
-    height: 71px;
-    background: url('../img/play_btn.png') no-repeat;
-    margin-top: 40px;
-}
-
-
-
-
-.title{
-    text-align: center;
-    overflow: hidden;
-}
-
-.title h2{
-    color: #616161;
-    font-family: "raleway-bold";
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0 0 20px 0;
-    text-transform: uppercase;
-}
-
-.title h3{
-    color: #9b9b9b;
-    font-family: "raleway-regular";
-    font-size: 14px;
-    margin: 0 0 20px 0;
-    font-weight: normal!important;
-}
-
-.title hr.separator{
-    display: block;
-    width: 40px;
-    height: 1px;
-    background-color: #ebebeb;
-    margin: 0 auto;
-    padding: 0;
-    border: 0!important;
-}
 
