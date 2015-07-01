@@ -36,21 +36,21 @@ header {
 
 .hands_icon{
   position: relative;
-  margin-left: -10px;
-  width: 50px;
+  margin-left: -3px;
+  width: 60px;
 }
 
 .hands_icon2{
   position: relative;
-  margin-left: -10px;
-  width: 50px;
+  margin-left: -3px;
+  width: 60px;
 
 }
 
 .hands_icon3{
   position: relative;
-  margin-left: 10px;
-  width: 50px;
+  margin-left: 3px;
+  width: 60px;
 }
 
 .twitter{
@@ -68,6 +68,12 @@ footer {
   font-size: 70px;
  
   position: absolute;
+}
+
+.video-play{
+  position: absolute;
+  margin-top: 260px;
+  margin-left: 700px;
 }
 
 .btn-group-pull-right {

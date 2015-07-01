@@ -44,7 +44,7 @@
             map: map            
          });
       }
-
++
     var location = new google.maps.LatLng(lat, lng);
     var mapOptions = {
       zoom: 8,
