@@ -18,6 +18,7 @@ body {
 
 }
 
+
 header {
 	margin-top: 35px;
 	font-size: 40px;
@@ -29,9 +30,44 @@ header {
   color: black;
 }
 
+.container-photos{
+  margin-left: 20px;
+}
+
+.hands_icon{
+  position: relative;
+  margin-left: -10px;
+  width: 50px;
+}
+
+.hands_icon2{
+  position: relative;
+  margin-left: -10px;
+  width: 50px;
+
+}
+
+.hands_icon3{
+  position: relative;
+  margin-left: 10px;
+  width: 50px;
+}
+
+.twitter{
+  float: right;
+
+
+}
+
 footer {
 	font-size: 10px;
 	text-align: center;
+}
+
+.play{
+  font-size: 70px;
+ 
+  position: absolute;
 }
 
 .btn-group-pull-right {
@@ -253,6 +289,12 @@ a {
     font-weight: normal;
     font-style: normal;
 
+}
+
+/*VIDEO */
+
+.video_foto{
+  width: 100%;
 }
 
 

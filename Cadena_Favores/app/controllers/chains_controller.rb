@@ -26,6 +26,12 @@ class ChainsController < ApplicationController
 		end
 	end
 
+	def destroy
+		@chain = Chain.find(params[:chain_id])
+		chain.destroy
+		redirect_to '/chains'	
+	end
+
 
 
 	private

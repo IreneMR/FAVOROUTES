@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".btn-send").on("click",function(){
+	$("#btn-send").on("click",function(){
 		 var token = $( 'meta[name="csrf-token"]' ).attr( 'content' );
 		 
 		  $.ajaxSetup( {
@@ -8,9 +8,9 @@ $(document).ready(function(){
 		    }
 		  });
 		var newPost = {
-			comment: $(this).siblings(".comment-field").val(),
-			user:  $(this).siblings(".user-field").val(), 
-			city:   $(this).siblings(".city-field").val()
+			comment: $(this).siblings("#comment-field").val(),
+			user:  $(this).siblings("#user-field").val(), 
+			city:   $(this).siblings("#city-field").val()
 		}
 		currentChainID = $(this).attr("name")
 
@@ -25,8 +25,6 @@ $(document).ready(function(){
 	});
 	
 })
-
-
 
 
 

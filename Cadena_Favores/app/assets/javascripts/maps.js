@@ -12,18 +12,38 @@
   
   $('#btn-search').on('click', function() {
   var search = $('#address').val(); 
+  
     $.ajax({
         type: 'GET',
         url: 'http://maps.googleapis.com/maps/api/geocode/json?address='+search+'&sensor=false',
         success: function(response){initialize(response)},
+
         error: function(){alert('KO')}
 
     });
   });
 
   function initialize(response) {
-    var lat = response.results[0].geometry.viewport.northeast.lat;
-    var lng = response.results[0].geometry.viewport.northeast.lng;
+
+     for( var i = 0; i < response.results.length; i++ ) {
+
+      var lat = response.results[i].geometry.viewport.northeast.lat;
+      var lng = response.results[i].geometry.viewport.northeast.lng;
+
+        var location = new google.maps.LatLng(lat, lng);
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map            
+         });
+      }
+    /*var multipleMarker =  $('#address').val(); 
+    for( i = 0; i < response.length; i++ ) {
+        var location = new google.maps.LatLng(response.results[i].geometry.viewport.northeast.lat, response.results[i].geometry.viewport.northeast.lng);
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map            
+         });
+      }
 
     var location = new google.maps.LatLng(lat, lng);
     var mapOptions = {
@@ -37,7 +57,8 @@
       map: map,
       position: location
 
-    })
+
+    })*/
   };
 
 //MULTIPLE MARKERS 
@@ -48,14 +69,5 @@
         error: function(){alert('KO')}
     });
 
-  var multipleMarker =  $('#address').val(); 
-    for( i = 0; i < markers.length; i++ ) {
-        var location = new google.maps.LatLng(markers[i][1], markers[i][2]);
-        marker = new google.maps.Marker({
-            position: position,
-            map: map,
-            title: markers[i][0]
-         });
-      }
-
+  
 });

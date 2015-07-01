@@ -15,6 +15,8 @@ class UserpostsController < ApplicationController
 		render json: 1
 	end
 
+	
+
 	def map
 		@user_posts= Userpost.select(:address)
 		render "map", layout: false

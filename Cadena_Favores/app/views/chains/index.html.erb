@@ -22,6 +22,7 @@
 					            <div class="timeline-body">
 					              <p>Comment: <%= userpost.comment %></p>
 					              <p>City: <%= userpost.address %></p>
+
 					            </div>
 					          </div>
 				        </li>
@@ -39,14 +40,12 @@
 	        					<h4 class="modal-title">Modal title</h4>
 	      				</div>
 	      				<div class="modal-body">
-	        					<%= text_field_tag :user, nil, id: nil, name: chain.id, class: "user-field", :placeholder => "Name", size: 40 %><br>
-								<%= text_area_tag :comment, nil, id: nil, name: chain.id, class: "comment-field", :placeholder => "Put here your experience", size: '30x3' %><br>
-								<%= text_field_tag :address, nil, id: nil, name: chain.id, class: "city-field", :placeholder => "City", size: 40 %><br>
+	      					Name: <input type="text" name="<%= chain.id %>" id="user-field"><br>
+  								Put here your experience: <textarea form ="testformid" name="<%= chain.id %>" id="comment-field" cols="35" wrap="soft"></textarea><br>
+  								City: <input type="text" name="<%= chain.id %>" id="city-field"><br>
+  								Save: <input type="submit" name="<%= chain.id %>" id="btn-send">
 	      				</div>
-	     					<div class="modal-footer">
-	        					<button type="button" class="btn-send" name="<%=chain.id %>" >Send!</button>
-	      				</div>
-	      			</div><!-- /.modal-content -->
+	     				</div><!-- /.modal-content -->
 	    			</div><!-- /.modal-dialog -->
 	  			</div><!-- /.modal -->	
 			</div>
@@ -55,13 +54,11 @@
 
  </div>
 
-
-<!--BOTÓN CADENA -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
 CREATE A NEW CHAIN
 </button>
 
-<div class="modal fade" id="myModal">
+<div class="modal fade" id="myModal2">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -69,16 +66,19 @@ CREATE A NEW CHAIN
         <h4 class="modal-title">NEW CHAIN</h4>
       </div>
       <div class="modal-body">
-       
-		
- 			
+      
+    Name: <input type="text" name="" id="name-field"><br>
+      Date: <input type="date" name="" id="date-field"><br>
+      Description: <textarea form ="testformid" name="" id="description-field" cols="35" wrap="soft"></textarea><br>
+      Save: <input type="submit" name="" id="button-send">     
       </div>
-      <div class="modal-footer">
-	      <button type="button" class="btn-send">Save!</button>
-	   </div>
-	   
+      
 
 
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
+
 </div><!-- /.modal -->
+
+
+
