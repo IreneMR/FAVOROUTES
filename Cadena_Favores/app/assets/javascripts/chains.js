@@ -23,8 +23,26 @@ $(document).ready(function(){
 	        dataType: "json"
 		})
 	});
+
+	$("#button-send").on("click",function(){
+		var newChain = {
+			name: $("#name-field").val(),
+			date: $("#date-field").val(), 
+			description: $("#description-field").val()
+
+		}
+
+		$.ajax({
+			type: "POST",
+			url: "http://localhost:3000/chains",
+			data: newChain,
+			dataType: "json",
+			success: function(){console.log("Chain created")},
+	        error: function(){console.log("Error chain")}	        
+		});
+	});
 	
-})
+});
 
 
 

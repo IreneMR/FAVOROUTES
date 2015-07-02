@@ -3,6 +3,17 @@ class ChainsController < ApplicationController
 		@chains = Chain.all
 		@chain = Chain.find 1
 		@user_posts = @chain.userposts
+
+		@userposts = []
+
+		@chains.each do |chain|
+			@userposts.push chain.userposts
+		end
+
+		respond_to do |format|
+			format.html
+			format.json { render json: @userposts }
+		end
 	end
 
 	def show
@@ -18,9 +29,18 @@ class ChainsController < ApplicationController
 	end
 
 	def create
-		@chain = Chain.new chain_params
+		
+		@chain_params = params[:newChain]
+		@chain = Chain.new
+		@chain.name = @chain_params["name"]
+		@chain.date_chain = @chain_params["date"]
+		@chain.description_chain = @chain_params["description"]
+
 		if @chain.save
-			redirect_to '/chains'
+			respond_to do |format|
+				format.html
+				format.json { render json: 1 }
+			end
 		else
 			render 'index'
 		end
@@ -38,7 +58,6 @@ class ChainsController < ApplicationController
 
 	def chain_params
 		params.require(:chain).permit(:name, :date_chain, :description_chain)
-		
 	end
 
 
